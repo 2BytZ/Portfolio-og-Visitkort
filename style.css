@@ -1,6 +1,4 @@
-* {
 
-}
 :root {
 background-color:bisque;
 }
@@ -31,7 +29,7 @@ background-color:bisque;
 }
 .subtitle {
     margin: 0;
-    
+
 }
 .sidebar .sidenav {
     display: grid;
