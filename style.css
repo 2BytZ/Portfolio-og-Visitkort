@@ -1,0 +1,39 @@
+* {
+
+}
+:root {
+background-color:bisque;
+}
+
+
+
+.profile-image {
+    border-color: black;
+    width: 225px;
+    height: 250px;
+}
+.container {
+    gap: 2rem;
+    padding: 2rem 5rem;
+    display: flex;
+    height: 100dvh;
+}
+.content {
+    background-color: white;
+}
+.sidebar {
+    display: grid;
+    width: 80dvh;
+    background-color:darkcyan;
+}
+.profile {
+    padding-left: 0.5rem;
+}
+.subtitle {
+    margin: 0;
+    
+}
+.sidebar .sidenav {
+    display: grid;
+    background-color: rgb(54, 54, 54);
+}
