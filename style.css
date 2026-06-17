@@ -1,37 +1,81 @@
 
 :root {
-background-color:bisque;
+--color-font-primary-light: #ffffff;
+--color-font-primary-dark: #000000;
+--color-background-primary-light: #f7f1ed;
+--color-background-primary-dark: #19100b;
+--color-content-background-light: #efe4dc;
+--color-content-background-dark: #231810;
+--color-sidebar-background-primary: #8d5e3f;
+--color-sidebar-background-secondary: #6a472f;
+
+--coffee-bean: #7f5539ff;
+--camel: #a68a64ff;
+--almond-cream: #ede0d4ff;
+--dusty-olive: #656d4aff;
+--ebony: #414833ff;
 }
 
+body {
+    background-color: var(--color-background-primary-light);
+}
+main {
+    background-color: var(--color-content-background-light);
+    border-radius: 20px;
+}
+aside {
+    background-color: var(--color-sidebar-background-primary);
+    color: var(--color-font-primary-light);
 
-
+}
+.subtitle {
+    color: var(--color-content-background-light);
+}
 .profile-image {
+    background-color: rgb(255, 255, 255);
+    border-style: dashed;
     border-color: black;
     width: 225px;
     height: 250px;
+    align-self: center;
+    justify-self: center;
 }
 .container {
     gap: 2rem;
     padding: 2rem 5rem;
     display: flex;
-    height: 100dvh;
+    height: fit-content;
+
 }
 .content {
-    background-color: white;
+    padding: 0.5rem;
 }
 .sidebar {
     display: grid;
     width: 80dvh;
-    background-color:darkcyan;
+}
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
 }
 .profile {
     padding-left: 0.5rem;
 }
-.subtitle {
-    margin: 0;
 
-}
-.sidebar .sidenav {
+.sidebar-nav .sidenav {
     display: grid;
-    background-color: rgb(54, 54, 54);
+}
+
+.footer-container {
+    padding: 2rem 5rem;
+}
+
+.navbtn {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--color-sidebar-background-secondary);
+    text-decoration: none;
+    color: var(--color-font-primary-light);
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
