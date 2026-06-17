@@ -1,5 +1,5 @@
-
 :root {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 --color-font-primary-light: #ffffff;
 --color-font-primary-dark: #000000;
 --color-background-primary-light: #f7f1ed;
@@ -8,6 +8,7 @@
 --color-content-background-dark: #231810;
 --color-sidebar-background-primary: #8d5e3f;
 --color-sidebar-background-secondary: #6a472f;
+--color-sidebar-dropdown: #462F20;
 
 --coffee-bean: #7f5539ff;
 --camel: #a68a64ff;
@@ -32,20 +33,61 @@ aside {
     color: var(--color-content-background-light);
 }
 .profile-image {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--color-background-primary-light);
+    color: black;
     border-style: dashed;
     border-color: black;
     width: 225px;
     height: 250px;
     align-self: center;
     justify-self: center;
+    border-radius: 20px;
+    text-align: center;
+}
+.dropdown-btn {
+    border: none;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
     gap: 2rem;
     padding: 2rem 5rem;
     display: flex;
+}
+.sidebar {
     height: fit-content;
-
+}
+.content {
+    height: fit-content;
+    box-shadow: 0px 10px 50px lightgrey;
+}
+.dropdown-container {
+    margin: 0;
+    inset: auto;
+    top: calc(anchor(bottom));
+    justify-self: anchor-center;
+    width: anchor-size(width);
+    border: 0;
+    border-radius: 10px;
+    padding: 0;
+    background-color: var(--color-background-primary-light);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.dropdown-popover {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.dropdown-popover > a {
+    text-decoration: none;
+    color:#000000;
+    padding: 1rem;
+}
+.dropdown-popover > a:hover {
+    background-color: var(--color-content-background-light);
+    border-radius: 10px;
 }
 .content {
     padding: 0.5rem;
@@ -53,6 +95,8 @@ aside {
 .sidebar {
     display: grid;
     width: 80dvh;
+    padding: 1rem;
+    border-radius: 20px;
 }
 .sidebar-top {
     display: flex;
@@ -78,4 +122,12 @@ aside {
     color: var(--color-font-primary-light);
     border-radius: 10px;
     margin-bottom: 10px;
+    font-weight:600;
+}
+
+.profile h1 {
+    margin-bottom: 0;
+}
+.profile .subtitle {
+    margin-top: 0;
 }
