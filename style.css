@@ -1,83 +1,146 @@
 :root {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
---color-font-primary-light: #ffffff;
---color-font-primary-dark: #000000;
---color-background-primary-light: #f7f1ed;
---color-background-primary-dark: #19100b;
---color-content-background-light: #efe4dc;
---color-content-background-dark: #231810;
---color-sidebar-background-primary: #8d5e3f;
---color-sidebar-background-secondary: #6a472f;
---color-sidebar-dropdown: #462F20;
-
---coffee-bean: #7f5539ff;
---camel: #a68a64ff;
---almond-cream: #ede0d4ff;
---dusty-olive: #656d4aff;
---ebony: #414833ff;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --color-font-primary-light: #ffffff;
+    --color-font-primary-dark: #000000;
+    --color-background-primary-light: #f7f1ed;
+    --color-background-primary-dark: #19100b;
+    --color-content-background-light: #efe4dc;
+    --color-content-background-dark: #231810;
+    --color-sidebar-background-primary: #8d5e3f;
+    --color-sidebar-background-secondary: #6a472f;
+    --color-sidebar-dropdown: #462F20;
+    --coffee-bean: #7f5539ff;
+    --camel: #a68a64ff;
+    --almond-cream: #ede0d4ff;
+    --dusty-olive: #656d4aff;
+    --ebony: #414833ff;
 }
 
+/* ===== Layout ===== */
 body {
     background-color: var(--color-background-primary-light);
 }
+
+.container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 5rem;
+}
+
+/* ===== Main Content ===== */
 main {
     background-color: var(--color-content-background-light);
     border-radius: 20px;
 }
+
+.content {
+    flex: 1;
+    height: fit-content;
+    padding: 0.5rem;
+    box-shadow: 0px 10px 50px lightgrey;
+}
+
+.main-text-container {
+    padding: 0.5rem;
+}
+
+.projects_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.project {
+    border: 3px solid var(--color-content-background-dark);
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.836);
+}
+.project p {
+    color: var(--dusty-olive);
+    font-weight: 500;
+}
+/* ===== Sidebar ===== */
 aside {
     background-color: var(--color-sidebar-background-primary);
     color: var(--color-font-primary-light);
 }
+
+.sidebar {
+    display: grid;
+    width: 40dvh;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    padding-left: 0.5rem;
+}
+
+.profile h1 {
+    margin-bottom: 0;
+}
+
+.profile .subtitle {
+    margin-top: 0;
+}
+
 .subtitle {
     color: var(--color-content-background-light);
 }
-.button-title {
-    color:var(--dusty-olive);
-    font-weight: 700;
-}
 
-.to-contacts_container {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 35%;
-    padding: 1rem;
-    border-radius: 16px;
-    border-color: var(--ebony);
-}
-.main-text-container {
-    padding: 0.5rem;
-}
+/* ===== Profile Image ===== */
 .profile-image {
-    background-color: var(--color-background-primary-light);
-    color: black;
-    border-style: dashed;
-    border-color: black;
     width: 225px;
     height: 250px;
-    align-self: center;
-    justify-self: center;
+    background-color: var(--color-background-primary-light);
+    color: black;
+    border: 2px dashed black;
     border-radius: 20px;
     text-align: center;
+    align-self: center;
+    justify-self: center;
 }
+
+/* ===== Navigation ===== */
+.sidebar-nav .sidenav {
+    display: grid;
+}
+
+.navbtn {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--color-sidebar-background-secondary);
+    color: var(--color-font-primary-light);
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.navbtn:hover {
+    background-color: var(--color-sidebar-background-secondary);
+    cursor: pointer;
+}
+
 .dropdown-btn {
     border: none;
     font-size: 16px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.container {
-    gap: 2rem;
-    padding: 2rem 5rem;
-    display: flex;
-}
-.sidebar {
-    height: fit-content;
-}
-.content {
-    height: fit-content;
-    box-shadow: 0px 10px 50px lightgrey;
-}
+
 .dropdown-container {
     margin: 0;
     inset: auto;
@@ -91,60 +154,46 @@ aside {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
 .dropdown-popover {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 100%;
 }
+
 .dropdown-popover > a {
-    text-decoration: none;
-    color:#000000;
     padding: 1rem;
+    color: #000000;
+    text-decoration: none;
 }
+
 .dropdown-popover > a:hover {
     background-color: var(--color-content-background-light);
     border-radius: 10px;
 }
-.content {
-    padding: 0.5rem;
+
+/* ===== Buttons ===== */
+button {
+    cursor: pointer;
 }
-.sidebar {
-    display: grid;
-    width: 80dvh;
-    padding: 1rem;
-    border-radius: 20px;
-}
-.sidebar-top {
+
+.to-contacts_container {
     display: flex;
     flex-direction: column;
-}
-.profile {
-    padding-left: 0.5rem;
-}
-
-.sidebar-nav .sidenav {
-    display: grid;
+    text-align: left;
+    width: 35%;
+    padding: 1rem;
+    border-radius: 16px;
+    border-color: var(--ebony);
 }
 
+.button-title {
+    color: var(--dusty-olive);
+    font-weight: 700;
+}
+
+/* ===== Footer ===== */
 .footer-container {
     padding: 2rem 5rem;
-}
-
-.navbtn {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--color-sidebar-background-secondary);
-    text-decoration: none;
-    color: var(--color-font-primary-light);
-    border-radius: 10px;
-    margin-bottom: 10px;
-    font-weight:600;
-}
-
-.profile h1 {
-    margin-bottom: 0;
-}
-.profile .subtitle {
-    margin-top: 0;
 }
