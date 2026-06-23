@@ -104,14 +104,19 @@ aside {
     width: 225px;
     height: 250px;
     background-color: var(--color-background-primary-light);
-    color: black;
-    border: 2px dashed black;
+    /*border: 2px dashed black;*/
     border-radius: 20px;
     text-align: center;
     align-self: center;
     justify-self: center;
+    overflow: hidden;
 }
-
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 /* ===== Navigation ===== */
 .sidebar-nav .sidenav {
     display: grid;
@@ -174,23 +179,103 @@ aside {
 }
 
 /* ===== Buttons ===== */
-button {
+.navbtn {
+    border: 2px solid var(--ebony);
+    background-color: var(--color-sidebar-background-secondary);
+    color: var(--color-font-primary-light);
+    transition: transform 0.2s ease, background-color 0.2s ease;
     cursor: pointer;
+    border: none;
+    background-color: var(--color-sidebar-background-secondary);
+    color: var(--color-font-primary-light);
+}
+
+.navbtn:hover {
+    transform: translateY(-2px);
 }
 
 .to-contacts_container {
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 35%;
-    padding: 1rem;
+    width: fit-content;
+    min-width: 220px;
+    padding: 1rem 1.2rem;
     border-radius: 16px;
-    border-color: var(--ebony);
+    border: 2px solid var(--ebony);
+    background-color: var(--color-sidebar-background-secondary);
+    color: var(--color-font-primary-light);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.to-contacts_container:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-sidebar-background-primary);
 }
 
 .button-title {
-    color: var(--dusty-olive);
+    color: var(--almond-cream);
     font-weight: 700;
+}
+
+.contact-details {
+    margin-bottom: 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.contact-details p {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.contact-details a {
+    color: var(--coffee-bean);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--ebony);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 0.9rem 1rem;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: rgba(255, 255, 255, 0.92);
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--color-font-primary-dark);
+    resize: vertical;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--coffee-bean);
+    box-shadow: 0 0 0 3px rgba(127, 85, 57, 0.15);
+}
+
+.contact-form textarea {
+    min-height: 150px;
 }
 
 /* ===== Footer ===== */
