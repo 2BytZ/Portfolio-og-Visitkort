@@ -20,7 +20,7 @@
                         <p><strong>Bopæl:</strong> Merkurvej 14, 8723 Løsning</p>
                     </div>
                     <h3>Send en besked</h3>
-                    <form class="contact-form" id="contact-form-details" action="/send-message.php" method="post">
+                    <form class="contact-form" id="contact-form-details" action="send-message.php" method="post">
                         <label for="name">Navn
                             <input type="text" id="name" name="name" placeholder="Dit navn" required>
                         </label>
@@ -51,19 +51,19 @@
                 </section>
                 <section class="sidebar-nav">
                     <div class="sidenav">
-                        <a href="/about.html" class="navbtn">Om mig</a>
+                        <a href="about.php" class="navbtn">Om mig</a>
                         <button popovertarget="dropdown" class="dropdown-btn navbtn">Karakterer
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div popover id="dropdown" class="dropdown-container">
                             <div class="dropdown-popover">
-                                <a href="/grades-h1.html">Hovedforløb 1.</a>
+                                <a href="grades-h1.php">Hovedforløb 1.</a>
                             </div>
                         </div>
-                        <a href="/certifications.html" class="navbtn">Beviser & Certifikater</a>
-                        <a href="/projects.html" class="navbtn">Projekter</a>
-                        <a href="/hobbies.html" class="navbtn">Hobbyer og Fritid</a>
-                        <a href="/contact.html" class="navbtn">Kontakt</a>
+                        <a href="certifications.php" class="navbtn">Beviser & Certifikater</a>
+                        <a href="projects.php" class="navbtn">Projekter</a>
+                        <a href="hobbies.php" class="navbtn">Hobbyer og Fritid</a>
+                        <a href="contact.php" class="navbtn">Kontakt</a>
                     </div>
                 </section>
             </aside>

@@ -9,6 +9,7 @@ document.querySelector('#contact-form-details').addEventListener('submit',functi
     // Save and trim individual data from FromData form
     const name = formData.get('name').trim();
     const email = formData.get('email').trim();
+    const company = formData.get('company').trim();
     const message = formData.get('message').trim();
     if (!name) {
         alert('Please input your name');
@@ -24,12 +25,12 @@ document.querySelector('#contact-form-details').addEventListener('submit',functi
         return;
     }
 
-    fetch('http://localhost:8000/send-message.php', {
+    fetch('./send-message.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, company, message }),
     })
     .then(response => {
         if (!response.ok) {

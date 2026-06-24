@@ -19,7 +19,7 @@
                     <p>Jeg er lige nu i gang med mit 2. Hovedforløb. I det tidligere hovedforløb lærte jeg om objektorienteret programmering, databaseprogrammering, udvikling af core-applikationer og HTML-hjemmesider osv. Og jeg gennemførte mine fag ekstraordinært.</p>
                     <h3>Er du, eller kender du, en virksomhed som søger en programmerings-lærling?</h3>
                     <p>Jeg søger aktivt læreplads-muligheder i hele landet og vil med glæde til samtale hos en virksomhed, som ønsker at have mig som lærling. Hvis dette interessere dig, er du velkommen til at sende mig en mail eller ringe til mig, så skal jeg sørger for at svare tilbage hurtigst muligt.</p>
-                    <button type="button" class="to-contacts_container" onclick="location.href='/contact.html'">
+                    <button type="button" class="to-contacts_container" onclick="location.href='/contact.php'">
                         <small class="button-title">Kom i kontakt!</small>
                         <span>Gå til kontakt siden &RightArrow;</span>
                     </button>
@@ -37,19 +37,19 @@
                 </section>
                 <section class="sidebar-nav">
                     <div class="sidenav">
-                        <a href="/about.html" class="navbtn">Om mig</a>
+                        <a href="about.php" class="navbtn">Om mig</a>
                         <button popovertarget="dropdown" class="dropdown-btn navbtn">Karakterer
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div popover id="dropdown" class="dropdown-container">
                             <div class="dropdown-popover">
-                                <a href="/grades-h1.html">Hovedforløb 1.</a>
+                                <a href="grades-h1.php">Hovedforløb 1.</a>
                             </div>
                         </div>
-                        <a href="/certifications.html" class="navbtn">Beviser & Certifikater</a>
-                        <a href="/projects.html" class="navbtn">Projekter</a>
-                        <a href="/hobbies.html" class="navbtn">Hobbyer og Fritid</a>
-                        <a href="/contact.html" class="navbtn">Kontakt</a>
+                        <a href="certifications.php" class="navbtn">Beviser & Certifikater</a>
+                        <a href="projects.php" class="navbtn">Projekter</a>
+                        <a href="hobbies.php" class="navbtn">Hobbyer og Fritid</a>
+                        <a href="contact.php" class="navbtn">Kontakt</a>
                     </div>
                 </section>
             </aside>
