@@ -1,18 +1,10 @@
 Portfolio hjemmeside & CV TODO
 Unfinished pages : {
-    Projekter
-    Karakterer
+    Projekter*
     Beviser og Certifikater
     Hobbyer og Fritid
     Welcome
-    Kontakt
 }
 
-Projekter : [
-    * Evt. Redesign
-    * Tilføj dropdown til mere info fx. Technologier, dato, GitHub link, Screenshot af produktet, hvad jeg lærte af det m.m.
-]
-Kontakt : [
-    * Backend til afsending af mail
-    * javascript funktionalitet
-]
+* Overvejer stadig noget at tilføje
+

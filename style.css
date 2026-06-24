@@ -52,18 +52,56 @@ main {
     gap: 2rem;
 }
 
+.project-date {
+    font-size: x-small;
+    margin: 0;
+}
+
 .project {
     border: 3px solid var(--color-content-background-dark);
     border-radius: 20px;
     padding: 10px;
     width: 300px;
-    height: 150px;
+    height: fit-content;
     background-color: rgba(255, 255, 255, 0.836);
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
+
 .project p {
     color: var(--dusty-olive);
-    font-weight: 500;
+    font-weight:700;
+    margin-bottom: 0;
 }
+.project small {
+    margin-top: 0;
+}
+
+.project > span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.teknologier{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.teknologier > li {
+    list-style: none;
+    border-radius: 20px;
+    border: 2px solid var(--ebony);
+    background-color: var(--dusty-olive);
+    width: fit-content;
+    padding: 5px;
+}
+
 /* ===== Sidebar ===== */
 aside {
     background-color: var(--color-sidebar-background-primary);
