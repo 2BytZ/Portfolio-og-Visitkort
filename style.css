@@ -68,6 +68,10 @@ main {
     display: flex;
     flex-direction: column;
 }
+.clickable {
+    cursor: pointer;
+}
+
 
 .project p {
     color: var(--dusty-olive);
@@ -179,6 +183,7 @@ aside {
 }
 
 .dropdown-btn {
+    anchor-name: --karakterer-btn;
     border: none;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -188,7 +193,7 @@ aside {
     margin: 0;
     inset: auto;
     top: calc(anchor(bottom));
-    justify-self: anchor-center;
+    /*justify-self: anchor-center;*/
     width: anchor-size(width);
     border: 0;
     border-radius: 10px;
@@ -196,6 +201,12 @@ aside {
     background-color: var(--color-background-primary-light);
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    
+    position: fixed;
+    position-anchor: --karakterer-btn;
+    left: anchor(left);
+    width: anchor-size(width);
+    
 }
 
 .dropdown-popover {
