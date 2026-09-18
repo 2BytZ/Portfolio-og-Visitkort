@@ -74,7 +74,7 @@ main {
 
 
 .project p {
-    color: var(--dusty-olive);
+    color: var(--color-sidebar-dropdown);
     font-weight:700;
     margin-bottom: 0;
 }
@@ -100,8 +100,8 @@ main {
 .teknologier > li {
     list-style: none;
     border-radius: 20px;
-    border: 2px solid var(--ebony);
-    background-color: var(--dusty-olive);
+    border: 2px solid var(--color-sidebar-dropdown);
+    background-color: var(--color-sidebar-background-primary);
     width: fit-content;
     padding: 5px;
 }
